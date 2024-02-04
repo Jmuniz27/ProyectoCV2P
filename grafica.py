@@ -22,7 +22,6 @@ if a is not None and n is not None:
     #llama a la logica para calcular la traza
     valorTraza = trazaConSum(a,n)
     
-    
     #Interfaz grafica
     fig = plt.figure(figsize=(16,8))
     ax = fig.add_subplot(111, projection='3d')
@@ -74,8 +73,6 @@ if a is not None and n is not None:
     ax.set_zlabel('Z')
     ax.set_title(f'Calculo Traza $x^2 + y^2 = {a}^2$ y x+y+2z=8')
     # Ajustar automáticamente la escala de los ejes
-    #ax.auto_scale_xyz([-a*2.5, a*2.5], [-a*2.5, a*2.5], [0, a*2.5])
-    #ax.margins(0.001)
     ax.autoscale(enable=True, axis='both', tight=True)
 
     ax.legend()
