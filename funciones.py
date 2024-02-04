@@ -4,7 +4,7 @@ def trazaConSum(a,n):
     #declaracion de variables 'symbols'
     pi = sp.pi.evalf()
     t, i= sp.symbols('t i',integer=True)
-    #parametrizacion de la curva
+    #parametrizacion de la curva t e [0,2pi]
     x = a * sp.cos(t)
     y = a * sp.sin(t)
     z = 4 - (a/2)*(sp.cos(t)+sp.sin(t))
@@ -28,4 +28,4 @@ def trazaConSum(a,n):
     i=1
     """
     sumt = sp.Sum(f,(i,1,n))
-    return (sumt.evalf()*delta_t) 
+    return (sumt.evalf()*delta_t)
